@@ -59,7 +59,7 @@ export function Footer() {
           </p>
           <div className="mt-6 h-px w-12 bg-amber-400" aria-hidden="true" />
           <div className="mt-6 space-y-3 text-sm text-white font-medium">
-            <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-2 text-white hover:text-amber-300 transition-colors">
+            <a href={`tel:${siteConfig.phone}`} suppressHydrationWarning className="flex items-center gap-2 text-white hover:text-amber-300 transition-colors">
               <Phone className="h-4 w-4 text-white" aria-hidden="true" /> {siteConfig.phone}
             </a>
             <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-white hover:text-amber-300 transition-colors">

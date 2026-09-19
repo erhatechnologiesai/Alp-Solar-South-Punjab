@@ -32,6 +32,13 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     if (href) {
+      if (href.startsWith("tel:") || href.startsWith("mailto:") || href.startsWith("http")) {
+        return (
+          <a href={href} className={classes} suppressHydrationWarning>
+            {children}
+          </a>
+        );
+      }
       return (
         <Link href={href} className={classes}>
           {children}

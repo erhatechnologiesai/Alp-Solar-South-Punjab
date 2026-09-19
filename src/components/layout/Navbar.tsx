@@ -61,6 +61,7 @@ export function Navbar() {
           <div className="hidden items-center gap-3 lg:flex shrink-0">
             <a
               href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+              suppressHydrationWarning
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0F2D52] px-4 xl:px-5 py-2.5 text-xs xl:text-sm font-extrabold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-[#0a203d] hover:scale-105 whitespace-nowrap border border-[#0F2D52]"
             >
               <Phone className="h-4 w-4 text-cyan-300" />

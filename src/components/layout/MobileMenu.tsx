@@ -66,6 +66,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
         <div className="pt-4 border-t border-slate-100">
           <a
             href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+            suppressHydrationWarning
             onClick={onClose}
             className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#0F2D52] px-6 py-3.5 text-sm font-extrabold uppercase tracking-wider text-white shadow-xl hover:bg-[#0a203d] text-center"
           >

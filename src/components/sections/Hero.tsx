@@ -112,6 +112,7 @@ export function Hero() {
           >
             <a
               href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+              suppressHydrationWarning
               className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 rounded-xl border-2 border-[#0F2D52] bg-[#0F2D52] px-4 sm:px-8 py-3 sm:py-3.5 text-xs sm:text-base font-extrabold uppercase tracking-wider text-white shadow-xl transition-all duration-300 hover:scale-[1.02] sm:hover:scale-105 hover:bg-[#0a203d] text-center whitespace-nowrap"
             >
               <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-cyan-300" />

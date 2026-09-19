@@ -104,9 +104,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="text-xs font-extrabold uppercase text-slate-100 tracking-wider">Phone Number</h4>
-                  <Link href={`tel:${siteConfig.phone}`} className="text-base font-black text-white mt-0.5 block">
+                  <a href={`tel:${siteConfig.phone}`} suppressHydrationWarning className="text-base font-black text-white mt-0.5 block hover:text-cyan-300 transition-colors">
                     {siteConfig.phone}
-                  </Link>
+                  </a>
                 </div>
               </div>
 

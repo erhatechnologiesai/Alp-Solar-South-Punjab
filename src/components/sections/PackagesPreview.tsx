@@ -99,13 +99,14 @@ export async function PackagesPreview() {
               {/* Action Buttons */}
               <div className="mt-8 grid grid-cols-2 gap-3">
                 <Link
-                  href={`/packages/${pkg.slug}`}
+                  href="/packages"
                   className="flex items-center justify-center rounded-xl bg-slate-100 hover:bg-slate-200 py-3 text-xs font-bold text-[#0F2D52] border border-slate-200 transition-colors text-center"
                 >
                   View Details
                 </Link>
                 <a
                   href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+                  suppressHydrationWarning
                   className="flex items-center justify-center gap-1.5 rounded-xl bg-[#0F2D52] hover:bg-[#153f70] py-3 text-xs font-bold text-white shadow-md transition-colors text-center"
                 >
                   <Phone className="h-3.5 w-3.5 text-cyan-300" />
