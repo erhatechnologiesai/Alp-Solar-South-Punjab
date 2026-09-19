@@ -11,7 +11,7 @@ const KNOWLEDGE_ITEMS = [
 We deliver top-tier solar power solutions across South Punjab, including Multan, Bahawalpur, Dera Ghazi Khan, Rahim Yar Khan, Muzaffargarh, Sahiwal, Khanewal, and Lodhran.
 Our solutions include Tier-1 solar panel installations (Longi, Jinko, JA Solar, Canadian Solar), AlpSolarr hybrid and on-grid inverters, Livo lithium storage batteries, Atlas BESS commercial storage, and complete MEPCO net-metering services.
 Customers can save up to 90% or more on their monthly electricity bills with our customized residential, commercial, industrial, and agricultural solar setups.
-Official Contact: Phone +92 300 1234567, WhatsApp +92 330 01234567, Email info@alpsolar.pk. Office located in Multan, South Punjab, Pakistan. Operating hours: Monday to Saturday 9:00 AM to 6:00 PM.`,
+Official Contact: Phone +92 302 3333499, WhatsApp +92 302 3333499, Email info@alpsolar.pk. Office located in Multan, South Punjab, Pakistan. Operating hours: Monday to Saturday 9:00 AM to 6:00 PM.`,
   },
   {
     url: "/about",
@@ -140,15 +140,15 @@ Q: Can solar run 1.5 ton inverter ACs?
 A: Yes! A 5kW system can easily run 1x 1.5 ton inverter AC during daytime. A 10kW system can run 2 to 3 ACs simultaneously along with normal household appliances.
 
 Q: How can I request a quote or site survey?
-A: Contact us directly on WhatsApp at 9233001234567 or call +92 300 1234567. We offer free initial consultations and site feasibility visits.`,
+A: Contact us directly on WhatsApp at 923023333499 or call +92 302 3333499. We offer free initial consultations and site feasibility visits.`,
   },
   {
     url: "/contact",
     title: "Contact ALP Solar South Punjab",
     content: `Contact Information for ALP Solar South Punjab:
 - Main Office: Multan, South Punjab, Pakistan.
-- Phone / Hotline: +92 300 1234567
-- WhatsApp: +92 330 01234567 (direct chat: https://wa.me/9233001234567)
+- Phone / Hotline: +92 302 3333499
+- WhatsApp: +92 302 3333499 (direct chat: https://wa.me/923023333499)
 - Email: info@alpsolar.pk
 - Website: https://alp-solar-south-punjab.vercel.app / https://alpsolar.pk
 - Working Hours: Monday to Saturday, 9:00 AM to 6:00 PM (Sunday closed).

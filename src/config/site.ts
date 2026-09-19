@@ -4,8 +4,8 @@
 export const siteConfig = {
   companyName: "ALP Solar South Punjab",
   logoUrl: "/images/logo.png?v=25",
-  phone: "+92 300 1234567",
-  whatsappNumber: "+923001234567", // digits only, e.g. "92XXXXXXXXXX" — used to build wa.me links
+  phone: "+92 302 3333499",
+  whatsappNumber: "+923023333499", // digits only, e.g. "92XXXXXXXXXX" — used to build wa.me links
   email: "info@alpsolar.pk",
   address: "Multan / South Punjab, Pakistan",
   googleMapsUrl: "[GOOGLE MAPS URL]",

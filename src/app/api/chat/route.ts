@@ -10,7 +10,7 @@ import {
   CHAT_MODEL_FALLBACK_2,
 } from "@/lib/gemini";
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9233001234567";
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "923023333499";
 
 interface ChatMessage {
   role: "user" | "model" | "assistant";
@@ -47,7 +47,7 @@ const SYSTEM_INSTRUCTION = `You are the official AI Solar Assistant for "ALP Sol
 - **Company Name**: ALP Solar South Punjab
 - **Operational Coverage**: Complete South Punjab including Multan, Bahawalpur, Dera Ghazi Khan (D.G. Khan), Rahim Yar Khan, Muzaffargarh, Khanewal, Lodhran, and Sahiwal.
 - **Office Location**: Multan, South Punjab, Pakistan.
-- **Phone**: +92 300 1234567 | **WhatsApp**: 9233001234567 | **Email**: info@alpsolar.pk
+- **Phone**: +92 302 3333499 | **WhatsApp**: 923023333499 | **Email**: info@alpsolar.pk
 - **Working Hours**: Monday to Saturday, 9:00 AM - 6:00 PM.
 
 ---
