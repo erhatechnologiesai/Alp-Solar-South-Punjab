@@ -680,16 +680,17 @@ export default function ProductsPage() {
                     <span className="text-[11px]">{product.warranty}</span>
                   </div>
 
-                  <Link
+                  <a
                     href={buildWhatsAppLink(
                       `Hi ALP Solar! I am interested in getting pricing and specs for ${product.name} (${product.series}). Please send details.`
                     )}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-xl bg-[#0F2D52] hover:bg-emerald-600 text-white px-4 py-2.5 text-xs font-extrabold uppercase tracking-wider shadow-md hover:scale-105 transition-all shrink-0"
                   >
                     <span>Get Price</span>
                     <ArrowRight className="h-3.5 w-3.5" />
-                  </Link>
+                  </a>
                 </div>
               </motion.div>
             ))}
@@ -710,13 +711,14 @@ export default function ProductsPage() {
             </p>
           </div>
 
-          <Link
+          <a
             href={buildWhatsAppLink("Hi ALP Solar! I need a complete solar installation quote with official AlpSolarr equipment.")}
             target="_blank"
+            rel="noopener noreferrer"
             className="shrink-0 py-4 px-8 rounded-2xl bg-cyan-400 text-slate-950 font-black text-sm uppercase tracking-wider shadow-xl hover:bg-cyan-300 transition-all hover:scale-105"
           >
             Request Site Survey & Quote
-          </Link>
+          </a>
         </div>
 
       </div>

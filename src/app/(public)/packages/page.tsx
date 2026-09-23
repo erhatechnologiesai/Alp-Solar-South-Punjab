@@ -141,14 +141,15 @@ export default function PackagesPage() {
               </div>
 
               <div className="mt-8 pt-6 border-t border-slate-100">
-                <Link
+                <a
                   href={buildWhatsAppLink(`Hi ALP Solar, please send me price proposal for ${pkg.name}.`)}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#0F2D52] py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-white shadow-md hover:bg-[#0a203d] hover:scale-[1.02] transition-all"
                 >
                   <span>Request Price Proposal</span>
                   <ArrowRight className="h-4 w-4" />
-                </Link>
+                </a>
               </div>
             </div>
           ))}

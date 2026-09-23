@@ -57,9 +57,9 @@ export default function NetMeteringPage() {
             <Link href="/contact" className="rounded-xl bg-cyan-500 px-6 py-3.5 text-sm font-extrabold uppercase text-[#0F2D52] shadow-md hover:bg-cyan-400">
               Get in Touch
             </Link>
-            <Link href={buildWhatsAppLink("Hi ALP Solar, I want to apply for Net Metering.")} target="_blank" className="rounded-xl border-2 border-white px-6 py-3.5 text-sm font-extrabold text-white hover:bg-white/10">
+            <a href={buildWhatsAppLink("Hi ALP Solar, I want to apply for Net Metering.")} target="_blank" rel="noopener noreferrer" className="rounded-xl border-2 border-white px-6 py-3.5 text-sm font-extrabold text-white hover:bg-white/10">
               WhatsApp Expert &rarr;
-            </Link>
+            </a>
           </div>
         </div>
       </div>

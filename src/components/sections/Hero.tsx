@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, Sun, Lightbulb, Heart, Zap, Sparkles, CheckCircle2, Home, Building2, BatteryCharging, Phone } from "lucide-react";
-import { siteConfig, buildWhatsAppLink } from "@/config/site";
+import { siteConfig } from "@/config/site";
 
 export function Hero() {
   return (

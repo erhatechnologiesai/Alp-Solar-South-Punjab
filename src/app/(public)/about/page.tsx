@@ -307,13 +307,14 @@ export default function AboutPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full lg:w-auto">
-            <Link
+            <a
               href={buildWhatsAppLink("Hi ALP Solar! I would like to schedule a site survey and solar consultation with your engineers.")}
               target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto text-center py-4 px-8 rounded-2xl bg-cyan-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl hover:bg-cyan-300 transition-all hover:scale-105"
             >
               Request Free Site Survey
-            </Link>
+            </a>
             <Link
               href="/contact"
               className="w-full sm:w-auto text-center py-4 px-8 rounded-2xl bg-slate-800/80 border border-slate-600 text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md hover:bg-slate-700 transition-all"

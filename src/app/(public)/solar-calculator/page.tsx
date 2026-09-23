@@ -619,14 +619,15 @@ export default function SolarCalculatorPage() {
 
             {/* Direct WhatsApp Call-To-Action */}
             <div className="pt-2">
-              <Link
+              <a
                 href={buildWhatsAppLink(results.waMessage)}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="w-full py-4 rounded-2xl bg-emerald-500 text-slate-950 font-black text-sm uppercase tracking-wider shadow-xl shadow-emerald-500/20 hover:bg-emerald-400 transition-all flex items-center justify-center gap-2 hover:scale-[1.01]"
               >
                 <MessageSquare className="h-5 w-5" />
                 <span>Get Exact Price Quote on WhatsApp</span>
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}

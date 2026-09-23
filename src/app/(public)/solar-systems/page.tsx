@@ -134,13 +134,14 @@ export default function SolarSystemsPage() {
                     <ArrowRight className="h-4 w-4" />
                   </Link>
 
-                  <Link
+                  <a
                     href={buildWhatsAppLink(`Hi ALP Solar, I am interested in ${item.title}.`)}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-xs font-bold text-emerald-700 hover:text-emerald-900"
                   >
                     Chat on WhatsApp &rarr;
-                  </Link>
+                  </a>
                 </div>
               </div>
             );

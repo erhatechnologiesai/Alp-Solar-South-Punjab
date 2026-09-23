@@ -133,14 +133,15 @@ export default function ContactPage() {
           </div>
 
           <div className="relative z-10 mt-10 pt-6 border-t border-slate-600/80">
-            <Link
+            <a
               href={buildWhatsAppLink("Hi ALP Solar, I would like to get in touch with your team.")}
               target="_blank"
+              rel="noopener noreferrer"
               className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 py-3.5 text-xs sm:text-sm font-extrabold uppercase tracking-wider text-white shadow-xl hover:bg-emerald-700 transition-all hover:scale-[1.02]"
             >
               <MessageCircle className="h-5 w-5" />
               <span>Direct WhatsApp Chat</span>
-            </Link>
+            </a>
           </div>
         </div>
 
