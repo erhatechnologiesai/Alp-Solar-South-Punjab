@@ -7,8 +7,8 @@ export const siteConfig = {
   phone: "+92 302 3333499",
   whatsappNumber: "+923023333499", // digits only, e.g. "92XXXXXXXXXX" — used to build wa.me links
   email: "info@alpsolar.pk",
-  address: "Multan / South Punjab, Pakistan",
-  googleMapsUrl: "[GOOGLE MAPS URL]",
+  address: "MA Jinnah Road, Multan, Pakistan",
+  googleMapsUrl: "https://www.google.com/maps/place/30%C2%B013'27.3%22N+71%C2%B030'54.5%22E/@30.2248076,71.5088609,16.33z/data=!4m4!3m3!8m2!3d30.2242589!4d71.5151427?hl=en&entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D",
   social: {
     facebook: "",
     instagram: "",

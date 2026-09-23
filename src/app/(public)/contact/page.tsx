@@ -93,7 +93,14 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="text-xs font-extrabold uppercase text-slate-100 tracking-wider">Office Address</h4>
-                  <p className="text-sm font-bold text-white mt-0.5">{siteConfig.address}</p>
+                  <a
+                    href={siteConfig.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-bold text-white hover:text-cyan-300 mt-0.5 block transition-colors"
+                  >
+                    {siteConfig.address}
+                  </a>
                 </div>
               </div>
 
