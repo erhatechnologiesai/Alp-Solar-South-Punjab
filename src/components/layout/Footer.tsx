@@ -49,7 +49,8 @@ export function Footer() {
         <div className="absolute -bottom-24 right-10 h-[350px] w-[500px] rounded-full bg-sky-400/10 blur-3xl" />
       </div>
 
-      <div className="container-page relative z-10 grid gap-12 py-16 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
+      <div className="container-page relative z-10 grid gap-8 sm:gap-10 py-14 sm:py-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.25fr_0.85fr_0.85fr_0.85fr_1.85fr]">
+        {/* Column 1: Brand & Contacts */}
         <div>
           <div className="inline-block rounded-xl bg-white p-4 shadow-md">
             <Image
@@ -60,7 +61,7 @@ export function Footer() {
               className="h-20 sm:h-24 w-auto object-contain"
             />
           </div>
-          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white font-medium">
+          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/90 font-medium">
             Professional solar design, installation, and after-sales support for homes and
             businesses across Pakistan.
           </p>
@@ -72,24 +73,17 @@ export function Footer() {
             <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-white hover:text-amber-300 transition-colors">
               <Mail className="h-4 w-4 text-white" aria-hidden="true" /> {siteConfig.email}
             </a>
-            <a
-              href={siteConfig.googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-start gap-2 text-white hover:text-amber-300 transition-colors"
-            >
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-white" aria-hidden="true" /> {siteConfig.address}
-            </a>
           </div>
         </div>
 
+        {/* Columns 2, 3, 4: Navigation Links */}
         {footerColumns.map((col) => (
           <div key={col.title}>
             <h3 className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-white">{col.title}</h3>
             <ul className="mt-4 space-y-2.5">
               {col.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm font-medium text-white hover:text-amber-300 transition-colors">
+                  <Link href={link.href} className="text-sm font-medium text-white/90 hover:text-amber-300 transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -97,64 +91,50 @@ export function Footer() {
             </ul>
           </div>
         ))}
-      </div>
 
-      {/* Headquarters & Regional Sales and Services Center Section */}
-      <div className="relative z-10 border-t border-white/15 bg-slate-950/40 py-12">
-        <div className="container-page grid gap-10 lg:grid-cols-12">
+        {/* Column 5 (Right Side): Regional Center & Headquarters */}
+        <div className="space-y-6">
           {/* Regional Sales and Services Center */}
-          <div className="lg:col-span-5">
-            <h3 className="font-mono text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-cyan-300 flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-amber-400" />
-              Regional sales and services center
+          <div>
+            <h3 className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-cyan-300 flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+              Regional Sales and Services Center
             </h3>
-
-            <div className="mt-4 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-lg space-y-3.5 backdrop-blur-xs">
-              <div className="flex items-start gap-3">
-                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-amber-400" aria-hidden="true" />
-                <div>
-                  <p className="text-sm font-bold text-white leading-relaxed">
+            <div className="mt-3 rounded-xl border border-white/10 bg-white/5 p-3.5 backdrop-blur-xs">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-amber-400" aria-hidden="true" />
+                <div className="text-xs">
+                  <p className="font-bold text-white leading-snug">
                     MA Jinnah Road, Multan, Pakistan
                   </p>
-                  <p className="mt-1 text-xs text-slate-300">
-                    Official authorized sales, engineering & warranty center for South Punjab.
-                  </p>
+                  <a
+                    href="https://www.google.com/maps/place/30%C2%B013'27.3%22N+71%C2%B030'54.5%22E/@30.2248076,71.5088609,16.33z/data=!4m4!3m3!8m2!3d30.2242589!4d71.5151427?hl=en&entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1.5 inline-flex items-center gap-1.5 font-bold text-cyan-300 hover:text-cyan-200 transition-colors"
+                  >
+                    <span>View on Google Maps</span>
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
                 </div>
-              </div>
-
-              <div className="pt-2">
-                <a
-                  href="https://www.google.com/maps/place/30%C2%B013'27.3%22N+71%C2%B030'54.5%22E/@30.2248076,71.5088609,16.33z/data=!4m4!3m3!8m2!3d30.2242589!4d71.5151427?hl=en&entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#0F2D52] to-[#1a4b85] hover:from-[#153f70] hover:to-[#225ea6] px-4 py-2.5 text-xs font-bold text-cyan-200 border border-cyan-400/30 transition-all hover:scale-[1.02] shadow-md group"
-                >
-                  <MapPin className="h-3.5 w-3.5 text-amber-400" />
-                  <span>View on Google Maps</span>
-                  <ExternalLink className="h-3 w-3 text-cyan-300 transition-transform group-hover:translate-x-0.5" />
-                </a>
               </div>
             </div>
           </div>
 
           {/* Headquarters */}
-          <div className="lg:col-span-7">
-            <h3 className="font-mono text-xs sm:text-sm font-bold uppercase tracking-[0.14em] text-cyan-300 flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-cyan-400" />
+          <div>
+            <h3 className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-cyan-300 flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
               Headquarters
             </h3>
-
-            <div className="mt-4 space-y-3">
+            <ul className="mt-3 space-y-2">
               {headquarters.map((hq, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-start gap-3 rounded-xl border border-white/5 bg-white/[0.03] p-3 text-xs sm:text-sm text-slate-200 leading-relaxed hover:bg-white/[0.06] transition-colors"
-                >
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-cyan-300" aria-hidden="true" />
+                <li key={idx} className="flex items-start gap-2 text-[11px] text-slate-200 leading-relaxed">
+                  <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-cyan-300" aria-hidden="true" />
                   <span>{hq}</span>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </div>
